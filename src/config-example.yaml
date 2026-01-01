@@ -1,0 +1,7 @@
+listen: ":8042"
+routes:
+  - name: "sub1" # http://127.0.0.1:8042/sub1
+    suburl: "https://example.com/sub1"
+  - name: "sub2" # http://127.0.0.1:8042/sub2
+    suburl: "https://example.com/sub2"
+    proxy: "http://127.0.0.1:7890" # use proxy request
